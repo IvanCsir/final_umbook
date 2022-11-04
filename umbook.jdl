@@ -1,8 +1,8 @@
 application {
   config {
-    baseName blog
+    baseName isa-umbook-db
     applicationType monolith
-    packageName ar.edu.um.isa.blog
+    packageName ar.edu.um.umbook.blog
     buildTool maven,
     devDatabaseType mariadb,
     prodDatabaseType mariadb,
