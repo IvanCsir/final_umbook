@@ -1,6 +1,6 @@
 application {
   config {
-    baseName isa-umbook-db
+    baseName umbook
     applicationType monolith
     packageName ar.edu.um.umbook.blog
     buildTool maven,
