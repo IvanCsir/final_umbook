@@ -1,4 +1,20 @@
-
+application {
+  config {
+    baseName blog
+    applicationType monolith
+    packageName ar.edu.um.isa.blog
+    buildTool maven,
+    devDatabaseType mariadb,
+    prodDatabaseType mariadb,
+    authenticationType jwt,
+    testFrameworks [cypress],
+    clientTheme sketchy,
+    languages [es,en],
+    nativeLanguage es,
+    enableSwaggerCodegen true
+  }
+  entities *
+}
 entity Usuario {
 	nombre String
     apellido String
@@ -32,7 +48,6 @@ entity Album {
 
 entity Fotos {
 	descripcion String
-    usuarioEtiquetados Array
 }
 
 entity Comentarios {
